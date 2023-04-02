@@ -1,4 +1,3 @@
-import { CreateDrawerNavigation } from '@react-navigation/drawer';
 import { Ionicons } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -30,7 +29,7 @@ export default function App() {
           <Tab.Screen name="Restaurante Bom sabor" component={ServicosScreen} />
           <Tab.Screen name="Carrinho" component={CarrinhoScreen} />
           <Tab.Screen name="Agendamento" component={AgendamentoScreen} options={{tabBarStyle: { display: "none" }, tabBarButton: () => null }}/>
-          <Tab.Screen name="Endereços" component={Enderecos} />
+          <Tab.Screen name="Enderecos" component={Enderecos} />
           <Tab.Screen name="Quantidade" component={Controllers} options={{tabBarStyle: { display: "none" }, tabBarButton: () => null }}/>
         </Tab.Navigator>
       </NavigationContainer>
